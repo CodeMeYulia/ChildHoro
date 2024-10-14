@@ -1,0 +1,39 @@
+header {
+    background-image: url(../images/pikaso_edit.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+}
+
+.nav_top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9em;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 15%;
+    margin-right: 15em;
+    padding: 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+main {
+    background-color: yellow;
+    width: 100%;
+    height: 700px;
+
+}
