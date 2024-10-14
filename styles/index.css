@@ -1,3 +1,7 @@
+/* * {
+    border: 1px dashed yellow;
+} */
+
 header {
     background-image: url(../images/pikaso_edit.jpeg);
     background-repeat: no-repeat;
@@ -8,17 +12,29 @@ header {
 
 .nav_top {
     align-items: center;
+    /* background-color: rgb(245, 245, 245, 0.4); */
     display: flex;
     justify-content: space-between;
-    padding: 0.9em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 5em;
 }
 
 .logo {
-    background-color: white;
     border-radius: 5px;
-    max-width: 15%;
-    margin-right: 15em;
+    min-width: 1.5%;
     padding: 0 10px;
+}
+
+.img_logo {
+    width: 15px;
 }
 
 img {
@@ -27,8 +43,42 @@ img {
 
 a {
     color: white;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     text-decoration: none;
+}
+
+.title_block {
+    margin: 100px 10%;
+}
+
+.title_top {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.35em;
+    color: white;
+    text-shadow: 2px 2px #2d0146;
+    color: #FFFFFF;
+    text-shadow: 0 0 1px #FFF, 0 0 1px #FFF, 0 0 15px #FFF, 0 0 2px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    letter-spacing: .03em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #36008d, 0 2px 0 #240066, 0 3px 0 #22004e, 0 4px 0 #110030, 0 5px 0 rgb(15, 0, 29), 0 0 55px #ffdc18, 0 0 75px #ffae18;
+}
+
+.btn {
+    background-color: rgb(255, 153, 0);
+    border-radius: 12px;
+    width: 240px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    border-color: #d45703;
+    text-shadow: 1px 2px 3px rgba(220, 113, 19, 0.97);
+}
+
+.withe_p {
+    color: white;
+    margin-top: 150px;
+    /* margin: auto; */
 }
 
 main {
