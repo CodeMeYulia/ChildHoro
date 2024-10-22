@@ -83,24 +83,19 @@ a {
 }
 
 main {
-    background-color: #f6f7ce;
     max-width: 100%;
-    /* margin: 0 5%; */
 }
-
-/* .one {
-    height: 500px;
-    width: 100%;
-} */
 
 .point {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 600px;
+    min-height: 700px;
     justify-content: center;
     align-content: center;
-    margin: 0 25%;
+    /* margin: 0 25em; */
+    width: 60%;
+    margin: auto;
 }
 
 .point_inside {
@@ -111,19 +106,24 @@ main {
     align-items: center;
     width: 20em;
     height: 14em;
-    padding: 25px;
+    padding: 2em;
     text-shadow: 0.05px 0.05px #583E2E;
 }
 
 .sirene {
     background-color: #ABA6BF;
+    background-color: #193146;
     color: #4e0579;
+    color: wheat;
+    ;
     border-radius: 50% 0 50% 0;
 }
 
 .violet {
     background-color: #595775;
+    background-color: #687787;
     color: #ABA6BF;
+    color: wheat;
     border-radius: 50% 0 50% 0;
 }
 
@@ -133,6 +133,7 @@ main {
 
 .crema {
     background-color: #F1E0D6;
+    background-color: #F9EDE3;
     color: #BF988F;
     justify-self: center;
     border-radius: 0 50% 0 50%;
@@ -140,13 +141,34 @@ main {
 
 .peache {
     background-color: #BF988F;
+    background-color: #dd9d67;
     color: #F1E0D6;
     border-radius: 0 50% 0 50%;
 }
 
 .two {
     background-color: #c2d3d3;
-    height: 500px;
+    min-height: 500px;
+    padding: 10%;
+}
+
+.two_text {
+    background-color: #F9EDE3;
+    border-radius: 1em;
+    padding: 25px;
+}
+
+.three {
+    min-height: 200px;
+    padding: 10%;
+    text-align: center;
+}
+
+.four {
+    background-color: #756c6e;
+    min-height: 300px;
+    padding: 10%;
+    text-align: center;
 }
 
 
