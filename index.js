@@ -1,31 +1,36 @@
 let calls = document.getElementsByClassName("more");
 let answers = document.getElementsByClassName('content')
-console.log(answers);
 
-function hidewAnswer() {
+function hideAnswer() {
     for (let i = 0; i < answers.length; i++) {
+        //если блок свернут - пропустить
         if (answers[i].classList.contains('collapse')) {
-            console.log('mao');
-        } else { answers[i].classList.add('collapse') }
-    }
-}
-
-function forgive() {
-    for (let i = 0; i < calls.length; i++) {
-        if (calls[i].classList.contains('active')) {
-            calls[i].classList.remove('active')
+            //если нет, то свернуть
+        } else {
+            answers[i].classList.add('collapse');
         }
     }
 }
 
 for (let i = 0; i < calls.length; i++) {
     calls[i].addEventListener('click', function () {
-        hidewAnswer();
-        forgive();
-        this.classList.toggle('active');
-        let answer = this.nextElementSibling;
-        answer.classList.toggle('collapse');
-        console.log(answer);
+        hideAnswer();
+        //если блок открыт и кнопка активна
+        if (calls[i].classList.contains('active')) {
+            calls[i].classList.remove('active');
+            this.nextElementSibling.classList.add('collapse');
+        } else {
+            calls[i].classList.add('active');
+            this.nextElementSibling.classList.remove('collapse');
+        }
     })
 }
+
+let order = document.querySelector('.order');
+console.log(order);
+order.addEventListener('click', function () {
+    // document.location.href = 'https://forms.gle/ZGA5UbCfuYo9gB7m7';
+    window.open('https://forms.gle/ZGA5UbCfuYo9gB7m7', '_blank');
+})
+
 

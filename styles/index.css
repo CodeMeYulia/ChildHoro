@@ -64,7 +64,7 @@ a {
     text-shadow: 0 -1px 0 #fff, 0 1px 0 #36008d, 0 2px 0 #240066, 0 3px 0 #22004e, 0 4px 0 #110030, 0 5px 0 rgb(15, 0, 29), 0 0 55px #ffdc18, 0 0 75px #ffae18;
 }
 
-.btn {
+.order {
     background-color: rgb(255, 153, 0);
     border-radius: 12px;
     width: 240px;
@@ -93,7 +93,6 @@ main {
     min-height: 700px;
     justify-content: center;
     align-content: center;
-    /* margin: 0 25em; */
     width: 60%;
     margin: auto;
 }
@@ -166,7 +165,7 @@ main {
 
 .four {
     background-color: #756c6e;
-    min-height: 300px;
+    /* min-height: 200px; */
     padding: 10%;
     text-align: center;
 }
@@ -203,8 +202,9 @@ main {
     padding: 10px 18px;
     /* overflow: hidden; */
     transition: max-heigth 0.2s easy-out;
-    background-color: #F9EDE3;
+    background-color: ##F9EDE3;
     border-radius: 1em;
+    line-height: 1.5em;
     /* max-height: 0; */
 }
 
