@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./images/NA3.png" type="image/png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-
-    <title>Child Horoskope</title>
+    <title>Детский гороскоп по дате рождения</title>
 </head>
 
 <body>
+    <div id="preloader"><span class="loader"></span></div>
     <header>
         <nav class="nav_top">
             <div class="logo">
@@ -24,9 +26,10 @@
             </div>
         </nav>
         <div class="title_block">
-            <p class="title_top">ГИД ПО ДЕТСКОМУ ГОРОСКОПУ
+            <p class="title_top text-focus-in">ГИД ПО ДЕТСКОМУ ГОРОСКОПУ
+
             </p>
-            <button class="order">
+            <button class="order bounce-top">
                 заказать астро-отчет
             </button>
             <p class="withe_p">Узнайте больше об индивидуальных особенностях вашего ребенка
@@ -34,6 +37,9 @@
         </div>
     </header>
     <main>
+        <span class="loader"></span>
+
+
         <div class="point one">
             <div class="point_inside crema"> Карта рождения.<br> Лагна и лагнеш.<br>Движущая сила личности.</div>
             <div class="lagna"></div>
@@ -48,7 +54,7 @@
             <div class="two_text">
                 <h2>ПОРЯДОК РАБОТЫ</h2>
                 <p>1. Пожалуйста, подготовьте данные для расчетов: <br>
-                <h3>для составления карты ребенка</h3>
+
                 <ul>
                     <li>имя и пол ребенка</li>
                     <li>дата рождения в формате день-месяц-год</li>
@@ -85,8 +91,6 @@
                     оплаты) </p>
                 <p>5. Отчет приходит на вашу почту в формате пдф</p>
                 <p>6. Вы имеете возможность запросить встречу в онлайн-формате и задать уточняющие вопросы по отчету</p>
-
-                <!-- данные бабушек, дедушек (если хотите посмотреть, с кем связан ребенок) -->
             </div>
         </div>
         <div class="three">
@@ -212,16 +216,30 @@
                 на живущих людей. Основная идея - в том, что при рождении человека планеты, запечатленные в момент
                 соединения его с материей стоят в определенной комбинации и в определенных местах.</p>
         </div> -->
-        <!-- <div class="inside">
-            <div class="color sirene">#ABA6BF - Sirene </div>
-            <div class="color violet">#595775 - Violet</div>
-            <div class="color braun">#583E2E - Braun</div>
-            <div class="color crema">#F1E0D6 - Crema</div>
-            <div class="color peache ">#BF988F - Peache</div>
-        </div> -->
     </main>
-    <footer></footer>
+    <footer>
+        <div class="connect">
+            <div class="insta msrs"></div>
+            <div class="tg msrs"></div>
+        </div>
+        <div class="logotype">
+            <img src="./images/nomadin.png" alt="logo">
+        </div>
+        <div class=""><em>codemeyulia 2024</em></div>
+    </footer>
     <script src="./index.js"></script>
+    <script>
+        document.body.style.overflow = 'hidden';
+        const loader = () => {
+            document.body.style.overflow = '';
+            const preloader = document.getElementById('preloader');
+            const fadeout = setInterval(() => {
+                const opacity = getComputedStyle(preloader).opacity;
+                opacity > 0 ? preloader.style.opacity = opacity - 0.05 : (clearInterval(fadeout), preloader.remove());
+            }, 15);
+        }
+        setTimeout(() => loader(), 500);
+    </script>
 </body>
 
 </html>

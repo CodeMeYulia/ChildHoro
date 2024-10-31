@@ -27,10 +27,10 @@ for (let i = 0; i < calls.length; i++) {
 }
 
 let order = document.querySelector('.order');
-console.log(order);
 order.addEventListener('click', function () {
     // document.location.href = 'https://forms.gle/ZGA5UbCfuYo9gB7m7';
     window.open('https://forms.gle/ZGA5UbCfuYo9gB7m7', '_blank');
 })
+
 
 
