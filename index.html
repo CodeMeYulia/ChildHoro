@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="preloader"><span class="loader"></span></div>
+    <!-- <div id="preloader"><span class="loader"></span></div> -->
     <header>
         <nav class="nav_top">
             <div class="logo">
@@ -27,7 +27,6 @@
         </nav>
         <div class="title_block">
             <p class="title_top text-focus-in">ГИД ПО ДЕТСКОМУ ГОРОСКОПУ
-
             </p>
             <button class="order bounce-top">
                 заказать астро-отчет
@@ -37,12 +36,31 @@
         </div>
     </header>
     <main>
-        <span class="loader"></span>
-
-
+        <!-- <span class="loader"></span> -->
         <div class="point one">
+            <div class="lagna">
+                <div class="desantura">
+                    <img src="./images/baby-parashut.png" alt="baby-parashut" width="200px">
+                    <button class="close">X</button>
+                </div>
+                <h3>Лагна</h3>
+                <p>(На санскрите लग्न, IAST: Lagna) происходит от корня «лаг», что означает: «прикрепленный к чему-либо;
+                    соединенный с чем-либо».
+                    "Лагна" или "восходящий знак" в ведической астрологии – это точка зодиака, восходящая на восточном
+                    горизонте в момент рождения (первого вдоха ребенка). Именно с восходящего знака в восточной
+                    астрологии начинается анализ
+                    гороскопа.
+                    Т.е. условно - это место крепления к земле.
+
+                <p><strong>Лагну ребенка нужно беречь. Лагна - показывает условия,
+                        связанные со здоровьем и силой личности, ее показатели нужно учитывать, когда вы
+                        ищете способ привести ребенка в состояние стабильности, защищенности, чтобы он
+                        ощущал почву под ногами, был здоров.</strong>
+                </p>
+                </p>
+            </div>
             <div class="point_inside crema"> Карта рождения.<br> Лагна и лагнеш.<br>Движущая сила личности.</div>
-            <div class="lagna"></div>
+
             <div class="point_inside sirene">Модель мышления. <br>Особенности восприятия. <br>Выбор образования.
             </div>
             <div class="point_inside violet">Родовой контекст. <br>Таланты, <br>поддержка рода.</div>
@@ -228,7 +246,7 @@
         <div class=""><em>codemeyulia 2024</em></div>
     </footer>
     <script src="./index.js"></script>
-    <script>
+    <!-- <script>
         document.body.style.overflow = 'hidden';
         const loader = () => {
             document.body.style.overflow = '';
@@ -236,10 +254,10 @@
             const fadeout = setInterval(() => {
                 const opacity = getComputedStyle(preloader).opacity;
                 opacity > 0 ? preloader.style.opacity = opacity - 0.05 : (clearInterval(fadeout), preloader.remove());
-            }, 15);
+            }, 0.5);
         }
-        setTimeout(() => loader(), 500);
-    </script>
+        setTimeout(() => loader(), 5);
+    </script> -->
 </body>
 
 </html>

@@ -32,5 +32,14 @@ order.addEventListener('click', function () {
     window.open('https://forms.gle/ZGA5UbCfuYo9gB7m7', '_blank');
 })
 
+let crema = document.querySelector('.crema');
+let lagna = document.querySelector('.lagna');
+crema.addEventListener('click', function () {
+    lagna.style.display = "block";
+})
+
+document.querySelector('.close').addEventListener('click', function () {
+    lagna.style.display = "none";
+})
 
 

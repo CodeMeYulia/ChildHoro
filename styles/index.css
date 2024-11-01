@@ -401,10 +401,6 @@ main {
     display: none;
 }
 
-.lagna {
-    background-image: url('');
-}
-
 footer {
     /* background-color: #193146; */
     display: flex;
@@ -480,4 +476,34 @@ footer {
         filter: blur(0px);
         opacity: 1;
     }
+}
+
+/* .one {} */
+
+.lagna {
+    border: 2px dashed grey;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    top: 820px;
+    left: 10px;
+    width: 21%;
+    min-height: 350px;
+    padding: 30px;
+    display: none;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.desantura {
+    /* border: 1px dashed red; */
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    border: none;
+    width: 24px;
+    height: 24px;
 }
