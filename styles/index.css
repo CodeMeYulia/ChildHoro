@@ -93,7 +93,7 @@ img {
     max-width: 100%;
 }
 
-a {
+.menu a {
     color: #FFFFFF;
     font-size: 0.8rem;
     text-decoration: none;
@@ -288,29 +288,26 @@ main {
 
 .point_inside {
     display: flex;
+    flex-direction: column;
     font-size: 1.2em;
     font-weight: 600;
     justify-content: center;
     align-items: center;
-    width: 20em;
     height: 14em;
     padding: 2em;
     text-shadow: 0.05px 0.05px #583E2E;
+    width: 40%;
+
 }
 
-.sirene {
-    /* background-color: #ABA6BF; */
+.blue {
     background-color: #193146;
-    color: #4e0579;
     color: wheat;
-    ;
     border-radius: 50% 0 50% 0;
 }
 
-.violet {
-    /* background-color: #595775; */
+.gray {
     background-color: #687787;
-    color: #ABA6BF;
     color: wheat;
     border-radius: 50% 0 50% 0;
 }
@@ -320,15 +317,16 @@ main {
 }
 
 .crema {
-    background-color: #F1E0D6;
     background-color: #F9EDE3;
     color: #BF988F;
-    justify-self: center;
     border-radius: 0 50% 0 50%;
 }
 
+.about:hover {
+    color: red;
+}
+
 .peache {
-    background-color: #BF988F;
     background-color: #dd9d67;
     color: #F1E0D6;
     border-radius: 0 50% 0 50%;
@@ -478,26 +476,32 @@ footer {
     }
 }
 
-/* .one {} */
-
-.lagna {
-    border: 2px dashed grey;
+.rasi,
+.lagna,
+.lagnesh,
+.mental,
+.perception,
+.specialization,
+.ancestors,
+.talent,
+.parents,
+.tasks {
+    border: 2px dashed #687787;
     background-color: #ffffff;
     border-radius: 20px;
     position: absolute;
-    top: 820px;
-    left: 10px;
+    top: 810px;
+    left: 37%;
     width: 21%;
-    min-height: 350px;
+    min-height: 200px;
     padding: 30px;
     display: none;
-    font-size: 0.8em;
+    font-size: 0.6em;
     line-height: 1.5em;
+    color: #193146;
 }
 
 .desantura {
-    /* border: 1px dashed red; */
-    margin-left: 30%;
     display: flex;
     justify-content: space-between;
 }
@@ -506,4 +510,12 @@ footer {
     border: none;
     width: 24px;
     height: 24px;
+}
+
+.lagna {
+    top: 790px;
+}
+
+.lagnesh {
+    top: 860px;
 }

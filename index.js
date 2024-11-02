@@ -32,14 +32,69 @@ order.addEventListener('click', function () {
     window.open('https://forms.gle/ZGA5UbCfuYo9gB7m7', '_blank');
 })
 
-let crema = document.querySelector('.crema');
+let aboutRasi = document.querySelector('.about-rasi');
+let aboutLagna = document.querySelector('.about-lagna');
+let aboutLagnesh = document.querySelector('.about-lagnesh');
+let rasi = document.querySelector('.rasi');
 let lagna = document.querySelector('.lagna');
-crema.addEventListener('click', function () {
+let lagnesh = document.querySelector('.lagnesh');
+
+aboutRasi.addEventListener('click', function () {
+    rasi.style.display = "block";
+})
+aboutLagna.addEventListener('click', function () {
     lagna.style.display = "block";
 })
+aboutLagnesh.addEventListener('click', function () {
+    lagnesh.style.display = "block";
+})
 
-document.querySelector('.close').addEventListener('click', function () {
-    lagna.style.display = "none";
+let aboutMental = document.querySelector('.about-mental');
+let aboutPerception = document.querySelector('.about-perception');
+let aboutSpecialization = document.querySelector('.about-specialization');
+let mental = document.querySelector('.mental');
+let perception = document.querySelector('.perception');
+let specialization = document.querySelector('.specialization');
+
+aboutMental.addEventListener('click', function () {
+    mental.style.display = "block";
+})
+aboutPerception.addEventListener('click', function () {
+    perception.style.display = "block";
+})
+aboutSpecialization.addEventListener('click', function () {
+    specialization.style.display = "block";
+})
+
+
+let aboutAncestors = document.querySelector('.about-ancestors');
+let aboutTalent = document.querySelector('.about-talent');
+let ancestors = document.querySelector('.ancestors');
+let talent = document.querySelector('.talent');
+aboutAncestors.addEventListener('click', function () {
+    ancestors.style.display = "block";
+});
+aboutTalent.addEventListener('click', function () {
+    talent.style.display = "block";
+});
+
+let aboutParents = document.querySelector('.about-parents');
+let aboutTasks = document.querySelector('.about-tasks');
+let tasks = document.querySelector('.tasks');
+aboutParents.addEventListener('click', function () {
+    parents.style.display = "block";
+});
+aboutTasks.addEventListener('click', function () {
+    tasks.style.display = "block";
+});
+
+let closeBtns = document.querySelectorAll('.close');
+console.log(closeBtns);
+
+closeBtns.forEach((e) => {
+    e.addEventListener('click', function () {
+        e.parentNode.parentNode.style.display = "none";
+    })
 })
 
 
