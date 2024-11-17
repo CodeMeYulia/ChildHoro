@@ -1,37 +1,12 @@
-let calls = document.getElementsByClassName("more");
-let answers = document.getElementsByClassName('content')
-
-function hideAnswer() {
-    for (let i = 0; i < answers.length; i++) {
-        //если блок свернут - пропустить
-        if (answers[i].classList.contains('collapse')) {
-            //если нет, то свернуть
-        } else {
-            answers[i].classList.add('collapse');
-        }
-    }
-}
-
-for (let i = 0; i < calls.length; i++) {
-    calls[i].addEventListener('click', function () {
-        hideAnswer();
-        //если блок открыт и кнопка активна
-        if (calls[i].classList.contains('active')) {
-            calls[i].classList.remove('active');
-            this.nextElementSibling.classList.add('collapse');
-        } else {
-            calls[i].classList.add('active');
-            this.nextElementSibling.classList.remove('collapse');
-        }
+//кнопки заказа
+let orders = document.querySelectorAll('.order');
+orders.forEach((e) => {
+    e.addEventListener('click', function () {
+        window.open('https://forms.gle/ZGA5UbCfuYo9gB7m7', '_blank');
     })
-}
-
-let order = document.querySelector('.order');
-order.addEventListener('click', function () {
-    // document.location.href = 'https://forms.gle/ZGA5UbCfuYo9gB7m7';
-    window.open('https://forms.gle/ZGA5UbCfuYo9gB7m7', '_blank');
 })
 
+//расшифровка основных блоков информации
 let aboutRasi = document.querySelector('.about-rasi');
 let aboutLagna = document.querySelector('.about-lagna');
 let aboutLagnesh = document.querySelector('.about-lagnesh');
@@ -66,7 +41,6 @@ aboutSpecialization.addEventListener('click', function () {
     specialization.style.display = "block";
 })
 
-
 let aboutAncestors = document.querySelector('.about-ancestors');
 let aboutTalent = document.querySelector('.about-talent');
 let ancestors = document.querySelector('.ancestors');
@@ -81,6 +55,7 @@ aboutTalent.addEventListener('click', function () {
 let aboutParents = document.querySelector('.about-parents');
 let aboutTasks = document.querySelector('.about-tasks');
 let tasks = document.querySelector('.tasks');
+let parents = document.querySelector('.parents');
 aboutParents.addEventListener('click', function () {
     parents.style.display = "block";
 });
@@ -89,12 +64,26 @@ aboutTasks.addEventListener('click', function () {
 });
 
 let closeBtns = document.querySelectorAll('.close');
-console.log(closeBtns);
 
 closeBtns.forEach((e) => {
     e.addEventListener('click', function () {
         e.parentNode.parentNode.style.display = "none";
     })
 })
+
+//открытие-скрытие вопросов-ответов
+let calls = document.getElementsByClassName("more");
+
+for (let i = 0; i < calls.length; i++) {
+    calls[i].addEventListener('click', function () {
+        //если блок открыт и кнопка активна
+        this.nextElementSibling.classList.toggle('collapse');
+        this.classList.toggle('active');
+    })
+
+}
+
+
+
 
 
