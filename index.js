@@ -7,61 +7,12 @@ orders.forEach((e) => {
 })
 
 //расшифровка основных блоков информации
-let aboutRasi = document.querySelector('.about-rasi');
-let aboutLagna = document.querySelector('.about-lagna');
-let aboutLagnesh = document.querySelector('.about-lagnesh');
-let rasi = document.querySelector('.rasi');
-let lagna = document.querySelector('.lagna');
-let lagnesh = document.querySelector('.lagnesh');
-
-aboutRasi.addEventListener('click', function () {
-    rasi.style.display = "block";
+let about = document.querySelectorAll('.about');
+about.forEach((e) => {
+    e.addEventListener('click', function () {
+        e.nextElementSibling.style.display = 'block';
+    })
 })
-aboutLagna.addEventListener('click', function () {
-    lagna.style.display = "block";
-})
-aboutLagnesh.addEventListener('click', function () {
-    lagnesh.style.display = "block";
-})
-
-let aboutMental = document.querySelector('.about-mental');
-let aboutPerception = document.querySelector('.about-perception');
-let aboutSpecialization = document.querySelector('.about-specialization');
-let mental = document.querySelector('.mental');
-let perception = document.querySelector('.perception');
-let specialization = document.querySelector('.specialization');
-
-aboutMental.addEventListener('click', function () {
-    mental.style.display = "block";
-})
-aboutPerception.addEventListener('click', function () {
-    perception.style.display = "block";
-})
-aboutSpecialization.addEventListener('click', function () {
-    specialization.style.display = "block";
-})
-
-let aboutAncestors = document.querySelector('.about-ancestors');
-let aboutTalent = document.querySelector('.about-talent');
-let ancestors = document.querySelector('.ancestors');
-let talent = document.querySelector('.talent');
-aboutAncestors.addEventListener('click', function () {
-    ancestors.style.display = "block";
-});
-aboutTalent.addEventListener('click', function () {
-    talent.style.display = "block";
-});
-
-let aboutParents = document.querySelector('.about-parents');
-let aboutTasks = document.querySelector('.about-tasks');
-let tasks = document.querySelector('.tasks');
-let parents = document.querySelector('.parents');
-aboutParents.addEventListener('click', function () {
-    parents.style.display = "block";
-});
-aboutTasks.addEventListener('click', function () {
-    tasks.style.display = "block";
-});
 
 let closeBtns = document.querySelectorAll('.close');
 

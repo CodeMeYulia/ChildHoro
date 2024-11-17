@@ -508,14 +508,14 @@ h2 {
 
 footer {
     display: flex;
-    max-height: 70px;
+    min-height: 30px;
     align-items: center;
     justify-content: space-between;
     padding: 5px 45px;
 }
 
 .logotype {
-    width: 12em;
+    width: 12%;
 }
 
 .msrs {
@@ -536,10 +536,9 @@ footer {
     padding: 0;
 }
 
-/* .made {
-    color: orange;
+.made {
     font-size: 0.8em;
-} */
+}
 
 
 .text-focus-in {
