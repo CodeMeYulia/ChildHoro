@@ -49,7 +49,6 @@
     }
 }
 
-
 header {
     background-image: url(../images/pikaso_edit.jpg);
     background-repeat: no-repeat;
@@ -468,6 +467,10 @@ h2 {
     place-items: center;
     position: relative;
     z-index: 19;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -675,4 +678,41 @@ footer {
     .point {
         margin: 10px auto;
     }
+}
+
+.bounce-down {
+    position: relative;
+}
+
+.star-cloud {
+    background-image: url(../images/zvezdi-png-kosmos-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -15em;
+    width: 200%;
+    height: 200vh;
+    margin: 0 auto;
+    animation: 700s linear infinite rotate;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.earth {
+    position: absolute;
+    top: 0;
+    /* background-image: url(../images/planet-earth-nonbckgr.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 300;
 }
