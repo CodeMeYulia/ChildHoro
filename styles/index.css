@@ -758,6 +758,10 @@ footer {
     z-index: -1;
 }
 
+#oferta {
+    color: #f5ab22;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);

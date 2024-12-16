@@ -1,0 +1,26 @@
+body {
+    background-image: url(../images/planet-earth-background_23-2150564685.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    background-position-y: 15%;
+
+}
+
+.search_container {
+    background-color: rgba(240, 248, 255, 0.411);
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 15%;
+    padding: 25px 5px 15px 5px;
+}
+
+.search_container a {
+    color: white;
+}
+
+h2 {
+    font-size: medium;
+}
