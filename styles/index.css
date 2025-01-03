@@ -50,6 +50,7 @@
 }
 
 header {
+    position: relative;
     background-image: url(../images/pikaso_edit.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,8 +64,7 @@ header {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    padding: 0.5em;
+    padding: 2em 0.5em;
 }
 
 .menu {
@@ -75,6 +75,7 @@ header {
 }
 
 .logo {
+    position: fixed;
     border-radius: 5px;
     min-width: 1.5%;
     padding: 0 10px;
@@ -282,7 +283,6 @@ img {
 
 .withe_p {
     color: white;
-    /* margin-top: 140px; */
     font-size: 1.7em;
 }
 
@@ -351,7 +351,6 @@ main {
     position: relative;
     color: white;
     width: 65%;
-    /* overflow: hidden; */
     display: flex;
     justify-content: center;
 
@@ -420,7 +419,6 @@ h3 {
     position: absolute;
     width: 115px;
     height: auto;
-    /* filter: drop-shadow(0 0 0 #b606ad); */
     z-index: 15;
     transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -877,6 +875,10 @@ footer {
 
 
 @media (min-width: 299px) and (max-width: 600px) {
+
+    .logo {
+        top: 30px;
+    }
 
     .menu {
         flex-direction: column;

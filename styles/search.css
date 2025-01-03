@@ -7,6 +7,43 @@ body {
 
 }
 
+header {
+    min-height: 700px;
+}
+
+.nav_top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0.5em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 5em;
+}
+
+.logo {
+    border-radius: 5px;
+    min-width: 1.5%;
+    padding: 0 10px;
+}
+
+.img_logo {
+    width: 15px;
+}
+
+.menu a {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
 .search_container {
     background-color: rgba(240, 248, 255, 0.411);
     width: 65%;
