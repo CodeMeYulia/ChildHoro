@@ -899,6 +899,10 @@ footer {
         font-size: 2.8em;
     }
 
+    .withe_p {
+        margin-bottom: 0.5em;
+    }
+
     .astrology {
         width: 100%;
     }
@@ -908,7 +912,7 @@ footer {
     }
 
     .astrology_title {
-        font-size: x-large;
+        font-size: large;
         line-height: 1.1em;
         overflow: hidden;
         width: 90%;
