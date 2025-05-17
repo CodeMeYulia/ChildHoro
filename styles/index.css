@@ -1128,6 +1128,10 @@ footer {
         font-size: 1rem;
         text-align: center;
     }
+
+    .two {
+        padding: 1em;
+    }
 }
 
 @media(min-width: 1920px) {
