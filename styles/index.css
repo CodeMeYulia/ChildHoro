@@ -934,11 +934,6 @@ footer {
 }
 
 @media (min-width: 299px) and (max-width: 600px) {
-    .main-container {
-        width: 90%;
-        padding: 0 10px;
-    }
-
     .nav_top {
         align-items: start;
     }
@@ -965,9 +960,21 @@ footer {
     }
 
     .withe_p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-shadow: 2px 1px 0 #414141;
         line-height: 1.8rem;
+    }
+
+    .astrology {
+        width: 70%;
+    }
+
+    .astrology_title {
+        padding: 0;
+    }
+
+    .undertitle {
+        padding: 0;
     }
 
     .first {
@@ -976,7 +983,7 @@ footer {
     }
 
     .left_block {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
@@ -1029,7 +1036,7 @@ footer {
     .brain {
         display: flex;
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .brain_inner {
@@ -1043,7 +1050,7 @@ footer {
     }
 
     .rigth_block {
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
 
@@ -1062,7 +1069,7 @@ footer {
     }
 
     .point {
-        width: 90%;
+        width: 100%;
     }
 
     .point_inside {
@@ -1070,6 +1077,10 @@ footer {
         line-height: 1.4em;
         height: 4em;
         padding: 4.9em;
+    }
+
+    .two {
+        padding: 1em;
     }
 
     .two_text {
