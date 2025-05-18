@@ -628,15 +628,27 @@ h2 {
 
 
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     min-height: 30px;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 45px;
+}
+
+.connect {
+    display: flex;
+    font-size: 0.7em;
+    text-decoration: none;
+    color: #000000;
+    padding-left: 15px;
+}
+
+.connect img {
+    width: 100%;
+    padding: 0;
 }
 
 .logotype {
-    width: 15%;
+    width: 35%;
     margin: auto;
 }
 
@@ -649,21 +661,12 @@ footer {
     height: 20px;
 }
 
-.connect {
-    display: flex;
-    margin-right: 10px;
-    font-size: 0.7em;
-    text-decoration: none;
-    color: #000000;
-}
 
-.connect img {
-    width: 100%;
-    padding: 0;
-}
 
 .made {
-    font-size: 1em;
+    font-size: 0.8em;
+    text-align: end;
+    padding-right: 15px;
 }
 
 .text-focus-in {
@@ -781,6 +784,8 @@ footer {
 #oferta {
     color: var(--button-color);
 }
+
+
 
 @keyframes rotate {
     from {
