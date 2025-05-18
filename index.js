@@ -28,10 +28,8 @@ about.forEach((e) => {
         // Открываем новое окно
         const newWindow = this.nextElementSibling;
         console.log(newWindow);
-        newWindow.style.display = 'flex';
         newWindow.style.height = 45 + 'vh';
-        newWindow.style.flexDirection = 'column';
-        newWindow.style.top = 50 + '%';
+        newWindow.style.top = 30 + '%';
     })
 })
 
