@@ -16,6 +16,10 @@
     --attention-color: red;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* preloader */
 .loader {
     width: 100px;
@@ -940,6 +944,14 @@ footer {
 }
 
 @media (min-width: 299px) and (max-width: 600px) {
+    header {
+        min-height: 750px;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
     .nav_top {
         align-items: start;
     }
@@ -972,12 +984,12 @@ footer {
     }
 
     .astrology {
-        width: 70%;
+        width: 80%;
     }
 
     .astrology_title {
-        padding: 0;
-        width: 100%;
+        font-size: 1.1em;
+        width: 80%;
     }
 
     .undertitle {
@@ -987,6 +999,7 @@ footer {
     .first {
         flex-direction: column;
         height: auto;
+        line-height: 1.1em;
     }
 
     .left_block {
@@ -1041,10 +1054,8 @@ footer {
     }
 
     .brain {
-        display: flex;
         justify-content: center;
-        font-size: 0.8em;
-        line-height: 1.1em;
+
     }
 
     .brain_inner {
@@ -1054,7 +1065,7 @@ footer {
 
     .brain img {
         width: 130%;
-        overflow: hidden;
+
     }
 
     .rigth_block {
@@ -1078,13 +1089,14 @@ footer {
     }
 
     .point {
-        width: 100%;
+        width: 80%;
     }
 
     .point_inside {
+        width: 90%;
         font-size: 1em;
-        line-height: 1.4em;
-        height: 4em;
+        line-height: 1.6em;
+        height: 8em;
         padding: 4.9em;
     }
 

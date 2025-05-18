@@ -21,7 +21,15 @@ orders.forEach((e) => {
 let about = document.querySelectorAll('.about');
 about.forEach((e) => {
     e.addEventListener('click', function () {
-        e.nextElementSibling.style.display = 'block';
+        const newWindow = e.nextElementSibling;
+        newWindow.style.display = 'block';
+        const buttonRect = this.getBoundingClientRect(); // Получаем координаты кнопки
+        // Вычисляем высоту кнопки относительно верхней части окна
+        const height = buttonRect.top + window.scrollY; // Учитываем скролл страницы
+        // Устанавливаем позицию нового окна (если браузер поддерживает)
+        if (newWindow) {
+            newWindow.moveTo(0, height);
+        }
     })
 })
 
@@ -44,3 +52,5 @@ for (let i = 0; i < calls.length; i++) {
     })
 
 }
+
+
