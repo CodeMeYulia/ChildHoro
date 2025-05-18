@@ -29,7 +29,7 @@ about.forEach((e) => {
         const newWindow = this.nextElementSibling;
         console.log(newWindow);
         newWindow.style.height = 45 + 'vh';
-        newWindow.style.top = 30 + '%';
+        newWindow.style.top = 10 + '%';
     })
 })
 
