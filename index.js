@@ -10,7 +10,6 @@ orders.forEach((e) => {
     e.addEventListener('mouseenter', function () {
         console.log('mao');
         const sound = document.getElementById('Sound');
-        console.log(sound);
         sound.currentTime = 0; //сброс времени воспроизведения
         sound.play();
         // mydiv.innerHTML = "<iframe src='./sound/shine-1.mp3' allow='autoplay' style='display: none' mute = 'false' audio.volume=0.5;></iframe>";
@@ -19,17 +18,20 @@ orders.forEach((e) => {
 
 //расшифровка основных блоков информации
 let about = document.querySelectorAll('.about');
+
 about.forEach((e) => {
     e.addEventListener('click', function () {
-        const newWindow = e.nextElementSibling;
-        newWindow.style.display = 'block';
-        const buttonRect = this.getBoundingClientRect(); // Получаем координаты кнопки
-        // Вычисляем высоту кнопки относительно верхней части окна
-        const height = buttonRect.top + window.scrollY; // Учитываем скролл страницы
-        // Устанавливаем позицию нового окна (если браузер поддерживает)
-        if (newWindow) {
-            newWindow.moveTo(0, height);
-        }
+        this.style.position = 'relative';
+        // Получаем координаты кнопки
+        const buttonRect = this.getBoundingClientRect();
+        console.log(buttonRect.top);
+        // Открываем новое окно
+        const newWindow = this.nextElementSibling;
+        console.log(newWindow);
+        newWindow.style.display = 'flex';
+        newWindow.style.height = 45 + 'vh';
+        newWindow.style.flexDirection = 'column';
+        newWindow.style.top = 50 + '%';
     })
 })
 
@@ -52,5 +54,3 @@ for (let i = 0; i < calls.length; i++) {
     })
 
 }
-
-
