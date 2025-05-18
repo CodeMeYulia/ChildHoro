@@ -8,7 +8,12 @@ orders.forEach((e) => {
     });
 
     e.addEventListener('mouseenter', function () {
-        mydiv.innerHTML = "<iframe src='./sound/shine-1.mp3' allow='autoplay' style='display: none' mute = 'false' audio.volume=0.5;></iframe>";
+        console.log('mao');
+        const sound = document.getElementById('Sound');
+        console.log(sound);
+        sound.currentTime = 0; //сброс времени воспроизведения
+        sound.play();
+        // mydiv.innerHTML = "<iframe src='./sound/shine-1.mp3' allow='autoplay' style='display: none' mute = 'false' audio.volume=0.5;></iframe>";
     });
 })
 
@@ -39,7 +44,3 @@ for (let i = 0; i < calls.length; i++) {
     })
 
 }
-
-document.querySelector('tg').addEventListener('mouseenter', function () {
-
-})
