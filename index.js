@@ -23,13 +23,16 @@ about.forEach((e) => {
     e.addEventListener('click', function () {
         this.style.position = 'relative';
         // Получаем координаты кнопки
-        const buttonRect = this.getBoundingClientRect();
-        console.log(buttonRect.top);
+        // const buttonRect = this.getBoundingClientRect();
+        // console.log(buttonRect.top);
         // Открываем новое окно
         const newWindow = this.nextElementSibling;
-        console.log(newWindow);
-        newWindow.style.height = 45 + 'vh';
-        newWindow.style.top = 10 + '%';
+        // console.log(newWindow);
+        newWindow.style.display = 'flex';
+        newWindow.style.flexDirection = 'column';
+        newWindow.style.height = 60 + 'vh';
+        newWindow.style.top = 50 + '%';
+        newWindow.style.justifyContent = 'space-around';
     })
 })
 

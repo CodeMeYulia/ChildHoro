@@ -1042,8 +1042,7 @@ footer {
     .talent,
     .parents,
     .tasks {
-        display: flex;
-        flex-direction: column;
+        display: none;
         width: 45%;
         margin: auto;
     }
