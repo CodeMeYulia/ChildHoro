@@ -920,11 +920,12 @@ footer {
     .tasks {
         border: 1px dashed grey;
         top: 130px;
-        left: 15%;
         width: 60%;
         min-height: 110px;
         font-size: 0.8em;
         line-height: 1.5em;
+        display: none;
+        margin: auto;
     }
 
     .point_inside {
@@ -1043,8 +1044,10 @@ footer {
     .parents,
     .tasks {
         display: none;
-        width: 45%;
+        width: 55%;
         margin: auto;
+        padding: 40px 10px;
+        height: auto;
     }
 
 
@@ -1092,7 +1095,6 @@ footer {
         font-size: 1rem;
         line-height: 1.2em;
     }
-
 
     .point {
         width: 80%;
